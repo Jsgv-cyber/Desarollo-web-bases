@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil personal | Juan Sebastián</title>
+
+    <style>
+        /* ESTILOS GENERALES */
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6fb;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #4142b8;
+        }
+
+        a:hover {
+            color: #5b5ce2;
+        }
+
+        .contenedor {
+            width: min(100% - 32px, 1000px);
+            margin: 0 auto;
+        }
+
+        /* ENCABEZADO PRINCIPAL */
+        header {
+            background: linear-gradient(135deg, #27295f, #5b5ce2);
+            color: white;
+            padding: 35px 0;
+        }
+
+        .barra {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-bottom: 35px;
+        }
+
+        .marca {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .presentacion h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            line-height: 1.2;
+            margin: 0 0 15px;
+        }
+
+        .presentacion p {
+            max-width: 650px;
+            color: #ececff;
+            font-size: 1.1rem;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: white;
+            color: #3637a4;
+            padding: 10px 16px;
+            border-radius: 9px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* SECCIONES */
+        main {
+            padding: 30px 0 45px;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 22px;
+            border: 1px solid #e2e6f0;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(30, 40, 80, 0.04);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+        }
+
+        .subtitulo {
+            color: #5b6475;
+        }
+
+        /* COLUMNAS */
+        .columnas {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        /* LISTA DE HABILIDADES */
+        .etiquetas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .etiquetas li {
+            background-color: #e8e8ff;
+            color: #37388f;
+            border-radius: 999px;
+            padding: 6px 12px;
+        }
+
+        /* TABLA */
+        .tabla-contenedor {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            min-width: 450px;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px 14px;
+            border-bottom: 1px solid #e2e6f0;
+        }
+
+        th {
+            background-color: #f0f1ff;
+            color: #30318a;
+        }
+
+        tbody tr:hover {
+            background-color: #fafaff;
+        }
+
+        /* ENLACES */
+        .enlaces {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .enlaces a {
+            padding: 9px 13px;
+            border: 1px solid #e2e6f0;
+            border-radius: 9px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            text-align: center;
+            padding: 22px 16px;
+            color: #5b6475;
+            font-size: 0.9rem;
+        }
+
+        /* ADAPTACIÓN A CELULARES */
+        @media (max-width: 650px) {
+            .columnas {
+                grid-template-columns: 1fr;
+            }
+
+            .barra {
+                align-items: flex-start;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header id="inicio">
+        <div class="contenedor">
+
+            <div class="barra">
+                <div class="marca">MI PERFIL PERSONAL</div>
+
+                <nav aria-label="Navegación principal">
+                    <a href="#sobre-mi">Sobre mí</a>
+                    <a href="#intereses">Intereses</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#contacto">Enlaces</a>
+                </nav>
+            </div>
+
+            <div class="presentacion">
+                <h1>¡Hola! Soy Juan Sebastián</h1>
+
+                <p>
+                    Diseñador gráfico y creador de contenido.
+                    Me gusta combinar creatividad, tecnología y
+                    comunicación para convertir ideas en proyectos visuales.
+                </p>
+
+                <a class="boton" href="#sobre-mi">
+                    Conoce más sobre mí
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenedor">
+
+        <!-- SECCIÓN SOBRE MÍ -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+
+            <p>
+                Me interesa el diseño, la edición de video y la creación
+                de contenido para medios digitales. Disfruto aprender
+                herramientas nuevas y desarrollar proyectos creativos.
+            </p>
+
+            <p>
+                Este sitio es una presentación personal creada con
+                HTML y CSS como práctica de desarrollo web.
+            </p>
+        </section>
+
+        <!-- SECCIÓN DE INTERESES -->
+        <section id="intereses">
+            <h2>Mis intereses</h2>
+
+            <p class="subtitulo">
+                Algunas de las cosas que disfruto aprender y explorar.
+            </p>
+
+            <div class="columnas">
+
+                <div>
+                    <h3>Intereses principales</h3>
+
+                    <!-- Lista desordenada -->
+                    <ul>
+                        <li>Diseño gráfico</li>
+                        <li>Animación y cine</li>
+                        <li>Ciencias naturales</li>
+                        <li>Viajes</li>
+                        <li>Deportes</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Mis objetivos</h3>
+
+                    <!-- Lista ordenada -->
+                    <ol>
+                        <li>Mejorar mis habilidades creativas.</li>
+                        <li>Aprender nuevas herramientas digitales.</li>
+                        <li>Desarrollar proyectos web.</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE HABILIDADES -->
+        <section id="habilidades">
+            <h2>Mis habilidades</h2>
+
+            <p class="subtitulo">
+                Áreas que forman parte de mi perfil creativo.
+            </p>
+
+            <ul class="etiquetas">
+                <li>Diseño gráfico</li>
+                <li>Edición de video</li>
+                <li>Creación de contenido</li>
+                <li>Redes sociales</li>
+                <li>Comunicación visual</li>
+                <li>Desarrollo web</li>
+            </ul>
+
+            <h3>Tabla de habilidades</h3>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Área</th>
+                            <th>Descripción</th>
+                            <th>Interés</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Diseño gráfico</td>
+                            <td>Crear piezas visuales y composiciones.</td>
+                            <td>Alto</td>
+                        </tr>
+
+                        <tr>
+                            <td>Edición de video</td>
+                            <td>Editar contenido audiovisual.</td>
+                            <td>Alto</td>
+                        </tr>
+
+                        <tr>
+                            <td>Desarrollo web</td>
+                            <td>Aprender HTML y CSS.</td>
+                            <td>En desarrollo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE ENLACES -->
+        <section id="contacto">
+            <h2>Enlaces de interés</h2>
+
+            <p>
+                Visita estas plataformas o reemplázalas por tus
+                perfiles personales.
+            </p>
+
+            <div class="enlaces">
+                <a href="https://github.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="https://www.behance.net/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Behance
+                </a>
+
+                <a href="https://www.youtube.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    YouTube
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>
+            © 2026 Juan Sebastián · Página de perfil personal.
+        </p>
+
+        <a href="#inicio">Volver al inicio ↑</a>
+    </footer>
+
+</body>
+</html>
