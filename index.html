@@ -1,41 +1,225 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta> charset="UTF - 8">
-        <meta name="viewport" content="width=device-width", initial-scale=1,0">
-        <title> Juan Sebastian | Perfil</title>
-    </head>
-        <ol>
-            <h1> Juan Sebastian Grisales Villa</h1>
-            <img src="img/foto-perfil.png" alt="Ilustracion de perfil de Juan" width="120">
-            <p> soy <strong> coder</strong> de desarollo de software e formacion</p>
 
-            <h2> Habilidades</h2>
-            <ul>
-                <li> Estructura de paginas con HTML</li>
-                <li>Control de versiones con Git y GitHub</li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil personal | Juan Sebastián</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header id="inicio">
+        <div class="contenedor">
+
+            <div class="barra">
+                <div class="marca">MI PERFIL PERSONAL</div>
+
+                <nav aria-label="Navegación principal">
+                    <a href="#sobre-mi">Sobre mí</a>
+                    <a href="#intereses">Intereses</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#contacto">Enlaces</a>
+                </nav>
+            </div>
+
+            <div class="presentacion">
+                <h1>¡Hola! Soy Juan Sebastián</h1>
+
+                <p>
+                    Diseñador gráfico y creador de contenido.
+                    Me gusta combinar creatividad, tecnología y
+                    comunicación para convertir ideas en proyectos visuales.
+                </p>
+
+                <a class="boton" href="#sobre-mi">
+                    Conoce más sobre mí
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenedor">
+
+        <!-- SECCIÓN SOBRE MÍ -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+
+            <p>
+                Soy graduado de diseño gráfico de la Universidad Potificia Bolivariana
+                Me interesa el diseño, la edición de video y la creación
+                de contenido para medios digitales, en temas fuera de lo tecnologico tambien
+                me gustan las ciencias naturales y los deportes. Disfruto aprender
+                herramientas nuevas y desarrollar proyectos creativos.
+            </p>
+
+
+
+            <p>
+                Este sitio es una presentación personal creada con
+                HTML y CSS como práctica de desarrollo web.
+            </p>
+        </section>
+
+        <!-- SECCIÓN DE INTERESES -->
+        <section id="intereses">
+            <h2>Mis intereses</h2>
+
+            <p class="subtitulo">
+                Algunas de las cosas que disfruto aprender y explorar.
+            </p>
+
+            <div class="columnas">
+
+                <div>
+                    <h3>Intereses principales</h3>
+
+                    <!-- Lista desordenada -->
+                    <ul>
+                        <li>Diseño gráfico</li>
+                        <li>Animación y cine</li>
+                        <li>Ciencias naturales</li>
+                        <li>Viajes</li>
+                        <li>Deportes</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Mis objetivos</h3>
+
+                    <!-- Lista ordenada -->
+                    <ol>
+                        <li>Mejorar mis habilidades creativas.</li>
+                        <li>Aprender nuevas herramientas digitales.</li>
+                        <li>Desarrollar proyectos web.</li>
+                        <li>Viajar por distintos paises</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE HABILIDADES -->
+        <section id="habilidades">
+            <h2>Mis habilidades</h2>
+
+            <p class="subtitulo">
+                Áreas que forman parte de mi perfil creativo.
+            </p>
+
+            <ul class="etiquetas">
+                <li>Diseño gráfico</li>
+                <li>Edición de video</li>
+                <li>Creación de contenido</li>
+                <li>Redes sociales</li>
+                <li>Comunicación audiovisual</li>
+                <li>Desarrollo web</li>
             </ul>
 
-            <h2>Mi ruta de aprendizaje</h2>
-        <ol> 
-        <li> HTML y CSS</li>
-        <li> Javascript</li>
-        <li>Backen y bases de datos</li>
-        </ol>
+            <h3>Tabla de habilidades</h3>
 
-        <h2> Mi horario de estudio</h2>
-        <table border="1">
-            <thead><tr><th>Dia</th><th>Tema</th><th>Horas</th></tr></thead><tbody>
-                <tr><td>Lunes</td><td>HTML</td><td>2</td></tr>
-                <tr><td>Miercoles</td><td>CSS</td><td>3</td></tr>
-            </tbody>
-        </table>
-           
-          <h2>Contacto</h2>
-          <p><a href="https://github.com/" target="_blank"> Mi GitHub</a> . 
-          <a href="juansebastiangrisalesvilla@gmail.com">Escribeme</a>/p> 
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Área</th>
+                            <th>Descripción</th>
+                            <th>Interés</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Diseño gráfico</td>
+                            <td>Crear piezas visuales y composiciones.</td>
+                            <td>Alto</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Edición de video</td>
+                            <td>Editar contenido audiovisual.</td>
+                            <td>Alto</td>
+                        </tr>
+
+                        <tr>
+                            <td>Desarrollo web</td>
+                            <td>Aprender HTML y CSS.</td>
+                            <td>En desarrollo</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ingles</td>
+                            <td>Hablado y escrito</td>
+                            <td>medio-alto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE ENLACES -->
+        <section id="contacto">
+            <h2>Enlaces de interés</h2>
+
+            <p>
+                Visita estas plataformas o reemplázalas por tus
+                perfiles personales.
+            </p>
+
+            <div class="enlaces">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
 
 
-        </body>
-    
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                    YouTube
+                </a>
+
+                <a class="enlaces" href="https://juansebastiangv.wixsite.com/portafolio" target="_blank"
+                    rel="noopener noreferrer">
+                    Portafolio
+                </a>
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- SECCIÓN PARA REDIRECCIONAR A PROYECTOS -->
+    <div class="contenedor" style="text-align: center; margin-bottom: 30px;">
+        <section>
+            <h2>¿Quieres ver más de mi trabajo?</h2>
+            <p class="subtitulo">Explora el listado completo con todos mis proyectos creativos y de desarrollo web.</p>
+            <a href="Proyectos.html" class="boton"
+                style="background-color: #5b5ce2; color: white; display: inline-block; margin-top: 15px;">
+                Ver todos mis proyectos →
+            </a>
+        </section>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        ...
+    </footer>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>
+            © 2026 Juan Sebastián · Página de perfil personal.
+        </p>
+
+        <a href="#inicio">Volver al inicio ↑</a>
+    </footer>
+
+</body>
+
 </html>
